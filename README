@@ -1,0 +1,23 @@
+QLC+ OSC Plugin adaption for Etherdream
+
+QLC+ Version: 4.11
+Etherdream Firmware version: r310
+
+Changes from original OSC Plugin
+* Adaptet OSC Path to /dmx[Universe]/[Channel] (e.g. /dmx1/42
+* Changed values from Float to Integer
+
+= How to Compile (Testet on Debian Sid):
+1. cd to plugins directory
+2. run qmake for Qt4 (e.g. with $ qtchooser -qt=qt4 -run-tool=qmake plugins.pro)
+3. $ make
+4. copy/replace /osc/libosc.so to your QLC+ Plugin Folder (e.g. /usr/lib/x86_64-linux-gnu/qt4/plugins/qlcplus/ on Debian)
+
+= How to use
+1. Choose OSC as output device in QLC+
+2. Set the IP of your Etherdream DAC (you can find it out with ehterdream_tools)
+3. Set the Port to 60000
+4. Party hard
+
+
+
